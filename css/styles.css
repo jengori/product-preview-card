@@ -1,0 +1,92 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif ;
+    font-size: 14px;
+}
+
+button {
+    background-color: darkgreen;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 2.5;
+    width: 95%;
+}
+
+button:hover {
+    background-color: rgb(2, 70, 2) ;
+}
+
+div {
+    overflow: hidden;
+}
+
+h1,h2 {
+    font-family: "Fraunces", serif;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    width: 80%;
+}
+
+h2 {
+    color: darkgreen;
+    font-size: 28px;
+}
+
+h3 {
+    color: gray;
+    font-size: 11px;
+}
+
+
+
+.grid {
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 420px;
+    width: 560px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+}
+
+.perfume-img {
+    border-radius: 15px 0 0 15px;
+    width: 100%;
+}
+
+.text-column {
+    padding: 20px  20px 20px;
+}
+
+.strikethrough-price {
+    padding-left: 20px;
+    text-decoration: line-through ;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+        height: 640px;
+        width: 340px;
+    }
+    h1 {width: 100%}
+
+
+    .image-column {height: 250px;}
+    .perfume-img {transform: translate(0, -80px);}
+
+}
+
